@@ -1,4 +1,4 @@
-package edu.clemson.cspsc2150.project4;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -7,7 +7,7 @@ import java.io.BufferedReader;
 import java.util.ArrayList;
 public class Main {
 
-    public static void main(String[] args)throws Exception {    File myFile = new File("C:\\Users\\Colin\\IdeaProjects\\3300_Project_2\\src\\edu\\clemson\\cspsc2150\\project4\\instruction");
+    public static void main(String[] args)throws Exception {    File myFile = new File(args[0]);
         System.out.println("Attempting to read from file in: "+myFile.getCanonicalPath());
 
         Scanner input = new Scanner(myFile);
